@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -20,7 +22,32 @@
 }
 
 body {
-  background: var(--background);
+  background: '#ffffff';
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'DM-Sans-light';
+  src: url('/fonts/DMSans_18pt-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM-Sans-Medium';
+  src: url('/fonts/DMSans_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* input color */
+
+.dark-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #12121b inset !important;
+  -webkit-text-fill-color: #fff !important;
 }
