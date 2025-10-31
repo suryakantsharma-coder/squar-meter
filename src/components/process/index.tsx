@@ -58,7 +58,7 @@ function ProcessSection() {
         </a>
 
         <Image
-          className="absolute left-0 sm:bottom-0 lg:top-0 z-[1]"
+          className="absolute left-0 bottom-[0px] z-[1]"
           src="/assets/side-boxes.svg"
           alt="testimonials"
           width={288}
@@ -66,7 +66,7 @@ function ProcessSection() {
         />
 
         <Image
-          className="absolute right-0 sm:bottom-0 lg:top-0 z-[1] transform-[rotateY(180deg)]"
+          className="absolute right-0 bottom-[0px] z-[1] transform-[rotateY(180deg)]"
           src="/assets/side-boxes.svg"
           alt="testimonials"
           width={288}
