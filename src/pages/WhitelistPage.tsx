@@ -8,7 +8,7 @@ function WhitelistPage() {
         alt="buildings"
       />
 
-      <div className="w-[100%] h-[100vh] absolute top-0 left-0 flex justify-center items-start mt-[107px] px-[16px]">
+      <div className="w-[100%] h-[100vh] absolute top-0 left-0 flex justify-center items-start mt-[107px] 2xl:mt-[8%] px-[16px]">
         <div className="w-[100%] lg:w-[741px] flex-cols justify-center items-center bg-[rgba(255,255,255,0.4)] ">
           <div className="w-[100%] flex justify-center items-center">
             <img src="/assets/whitelist/logo.svg" alt="logo" className="h-[30px] lg:h-[auto]" />
