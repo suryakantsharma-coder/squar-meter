@@ -1,4 +1,9 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
+
 function HeroText() {
+  const router = useRouter();
   return (
     <div className="w-[100%] flex justify-center items-center ">
       <div className="w-[627px] text-center">
@@ -11,7 +16,12 @@ function HeroText() {
         </p>
 
         <a href="#contact_us">
-          <button className=" h-[50px] bg-[#000000] rounded-[5px] text-[#FFFFFF] mt-[34px] py-[13px] px-[42px] cursor-pointer">
+          <button
+            className=" h-[50px] bg-[#000000] rounded-[5px] text-[#FFFFFF] mt-[34px] py-[13px] px-[42px] cursor-pointer"
+            // onClick={() => {
+            //   router?.push('/whitelist');
+            // }}
+          >
             Book a Free Demo Now
           </button>
         </a>

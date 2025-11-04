@@ -1,15 +1,20 @@
 function WhitelistPage() {
   return (
-    <div className="w-[100%] h-[100vh] lg:h-[auto] relative overflow-hidden">
-      <img src="/assets/whitelist/boxes.svg" className="w-[100%]" alt="boxes" />
+    // pb-[680px]
+    <div className="w-[100%] h-[140vh] lg:h-[auto]  lg:pb-[40px] relative">
+      <img
+        src="/assets/whitelist/boxes.svg"
+        className="w-[100%] h-[140vh] lg:h-[100%] object-cover"
+        alt="boxes"
+      />
       <img
         src="/assets/whitelist/buildings.svg"
-        className="w-[100%] absolute bottom-0"
+        className="w-full absolute bottom-0"
         alt="buildings"
       />
 
-      <div className="w-[100%] h-[100vh] absolute top-0 left-0 flex justify-center items-start mt-[107px] 2xl:mt-[8%] px-[16px]">
-        <div className="w-[100%] lg:w-[741px] flex-cols justify-center items-center bg-[rgba(255,255,255,0.4)] ">
+      <div className="w-[100%] h-[100vh] absolute top-0 left-0 flex justify-center items-start mt-[80px] 2xl:mt-[8%] px-[16px]">
+        <div className="w-[100%] lg:w-[741px] flex-cols justify-center items-center bg-[rgba(255,255,255,1)] ">
           <div className="w-[100%] flex justify-center items-center">
             <img src="/assets/whitelist/logo.svg" alt="logo" className="h-[30px] lg:h-[auto]" />
           </div>
@@ -20,11 +25,49 @@ function WhitelistPage() {
             Get early access to Zameen.app and stay ahead with AI-driven insights and automation.
           </p>
 
-          <div className="w-[100%] flex flex-col lg:flex-row justify-center items-center mt-[34px] gap-[15px]">
+          {/* <div className="w-[100%] flex flex-col lg:flex-row justify-center items-center mt-[34px] gap-[15px]">
             <input className="px-[15px] py-[10px] w-[100%] lg:w-[435px] border-[1px] border-[rgba(17,17,28,0.12)] text-[#11111C]" />
-            <button className="w-[100%] lg:w-[auto] px-[53.2px] py-[13.5px] bg-[#11111C] rounded-[5px] font-[DM Sans] text-[16px] leading-[145%] text-center">
+            <button className="w-[100%] lg:w-[auto] px-[53.2px] py-[13.5px] bg-[#11111C] text-[#FFFFFF] rounded-[5px] font-[DM Sans] text-[16px] leading-[145%] text-center">
               Join Us
             </button>
+          </div> */}
+
+          <div className="mt-[40px]">
+            <div className="w-[100%] grid lg:grid-cols-2  gap-[20px]">
+              <div className="w-[100%] ">
+                <p className="font-[DM Sans] text-[14px] text-[#11111C]">Name*</p>
+                <input
+                  className="px-[15px] py-[10px] w-[100%] border-[1px] border-[rgba(17,17,28,0.12)] text-[#11111C]"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div className="w-[100%]">
+                <p className="font-[DM Sans] text-[14px] text-[#11111C]">Phone Number*</p>
+                <input
+                  className="px-[15px] py-[10px] w-[100%] border-[1px] border-[rgba(17,17,28,0.12)] text-[#11111C]"
+                  placeholder="+91"
+                />
+              </div>
+              <div className="w-[100%]">
+                <p className="font-[DM Sans] text-[14px] text-[#11111C]">Email Address</p>
+                <input
+                  className="px-[15px] py-[10px] w-[100%]  border-[1px] border-[rgba(17,17,28,0.12)] text-[#11111C]"
+                  placeholder="Your email address"
+                />
+              </div>
+              <div className="w-[100%]">
+                <p className="font-[DM Sans] text-[14px] text-[#11111C]">Company Name*</p>
+                <input
+                  className="px-[15px] py-[10px] w-[100%] border-[1px] border-[rgba(17,17,28,0.12)] text-[#11111C]"
+                  placeholder="Your company Name"
+                />
+              </div>
+            </div>
+            <div className="mt-[20px] flex justify-end items-center">
+              <button className="w-[100%] lg:w-[auto] px-[53.2px] py-[13.5px] bg-[#11111C] text-[#FFFFFF] rounded-[5px] font-[DM Sans] text-[16px] leading-[145%] text-center">
+                Join Us
+              </button>
+            </div>
           </div>
         </div>
       </div>
